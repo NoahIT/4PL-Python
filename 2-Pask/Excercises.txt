@@ -1,0 +1,39 @@
+1. Write a Python program to print the following string in a specific format
+
+2. Write a Python program which accepts the user's first and last name and
+print them in reverse order with a space between them.
+a. Input: Vardenis Pavardenis
+b. Output: Pavardenis Vardenis
+
+3. Write a Python program to calculate the number of days between two
+dates.
+
+4. Write a Python program to calculate the number of days to your birthday.
+Enter year, month, and day in the terminal.
+
+5. Write a Python program that will accept the base and height of a triangle
+and compute the area.
+
+6. Write a Python program to solve (x + y) * (x + y).
+Test Data : x = 4, y = 3
+
+7. Write a Python program to compute the distance between the points (x1,
+y1) and (x2, y2).
+
+8. Write a Python program to get OS name, platform and release information.
+
+9. Write a Python program to find out the number of CPUs using.
+
+10. Write a Python program to parse a string to Float or Integer.
+
+11.Write a Python program to convert the distance (in feet) to inches, yards,
+and miles.
+
+12. Write a Python program to convert all units of time into seconds.
+
+13. Write a Python program to calculate body mass index (BMI)
+
+14. Given variables x=30 and y=20, write a Python program to print
+"30+20=50"
+
+15. Write a Python program to check whether a string is numeric.
