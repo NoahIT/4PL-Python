@@ -1,0 +1,6 @@
+The os and sys modules provide numerous
+tools to deal with filenames, paths,
+directories. ... These modules are wrappers
+for platform specific modules, so functions
+like os. path. split work on UNIX, Windows,
+Mac OS, and any other platform supported by Python.[0] - This line is added from code[1] - This line is added from code[2] - This line is added from code[3] - This line is added from code[4] - This line is added from code[5] - This line is added from code[6] - This line is added from code[7] - This line is added from code[8] - This line is added from code[9] - This line is added from code
