@@ -1,7 +1,7 @@
-from prettytable import prettytable
+from prettytable import PrettyTable
 import random
 
-x = prettytable()
+x = PrettyTable()
 
 x.field_names = ["City", "Area", "Population"]
 x.add_row(["Adelaide", 1295, 1158259])
