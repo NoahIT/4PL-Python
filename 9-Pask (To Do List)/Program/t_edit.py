@@ -1,0 +1,25 @@
+from t_show import show_task_names
+import Gfile
+
+def edit_task():
+    show_task_names()
+    print("\n")
+    print("> Enter the number of the task you want to edit: ")
+    input(Gfile.t_num)
+    print("\n")
+    print("> Edit your task name:\n")
+    print(input(Gfile.task[Gfile.t_num]))
+    print("\n")
+    print("> (OPTIONAL) Edit your subtask name:\n")
+    print(input(Gfile.subtask[Gfile.t_num]))
+    print("\n")
+    print("> (OPTIONAL) Edit your task required time to finish:\n")
+    print(input(Gfile.time[Gfile.t_num]))
+    print("\n")
+    print("> (OPTIONAL) Edit your task required day to finish:\n")
+    print(input(Gfile.day[Gfile.t_num]))
+    print("\n")
+    print("> (OPTIONAL) Edit your task prioritization:\n")
+    print(input(Gfile.prioritization[Gfile.t_num]))
+    print("\n")
+    print("[Task edited successfully]")
