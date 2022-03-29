@@ -2,25 +2,25 @@ import turtle
 import gv
 import game
 import keyboard
-import wrong_input
 
-def greeting():
+def wrong_input():
+    turtle.clearscreen()
+
     greeting = turtle.Turtle()
     greeting.speed(0)
     greeting.color("blue")
     greeting.penup()
     greeting.hideturtle()
     greeting.goto(0, 260)
-    greeting.write("Welcome to Ping Pong game", align="center", font=("Courier", 24, "bold"))
+    greeting.write("WRONG INPUT !", align="center", font=("Courier", 24, "bold"))
 
-def difficulty():
     difficulty_s = turtle.Turtle()
     difficulty_s.speed(0)
     difficulty_s.color("blue")
     difficulty_s.penup()
     difficulty_s.hideturtle()
     difficulty_s.goto(0, 130)
-    difficulty_s.write("Please select your difficulty:", align="center", font=("Courier", 20, "bold"))
+    difficulty_s.write("Please select your difficulty again:", align="center", font=("Courier", 20, "bold"))
 
     difficulty_se = turtle.Turtle()
     difficulty_se.speed(0)
@@ -46,10 +46,6 @@ def difficulty():
     difficulty_sh.goto(0, 40)
     difficulty_sh.write("Hard [Press H]", align="center", font=("Courier", 15, "bold"))
 
-def start():
-    greeting()
-    difficulty()
-
     game.sc.listen()
     if keyboard.read_key() == "e":
         gv.ball_speed = 40
@@ -64,6 +60,4 @@ def start():
         turtle.clearscreen()
         game.game_starts()
     else:
-        wrong_input.wrong_input()
-
-    game.game_starts()
+        wrong_input()
