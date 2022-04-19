@@ -12,6 +12,8 @@ def clear_entry3(event):
    entry_3.delete(0, END)
 
 def button_clicked():
+    if len(entry_1.get()) or len(entry_2.get()) or len(entry_3.get()) == 0:
+        messagebox.showinfo("Information", "tu smirdi")
     if len(entry_1.get()) == 0:
         messagebox.showinfo("Information", "Username entry is not filled\nEnter your selected username")
     elif len(entry_2.get()) == 0:
@@ -42,12 +44,12 @@ entry_2.insert(END, string="Password")
 entry_2.bind("<Button-1>", clear_entry2)
 
 entry_3 = Entry(width=50)
-entry_3.insert(END, string="Repeat Password")
 entry_3.bind("<Button-1>", clear_entry3)
 
 button = Button(text="Sign In", command=button_clicked)
 button_2 = Button(text="Exit", command=button_clicked_2)
 
+entry_3.insert(END, string="Repeat Password")
 label.pack()
 label_2.pack()
 entry_1.pack(expand=YES)
