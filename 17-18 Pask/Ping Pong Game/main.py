@@ -2,7 +2,7 @@ import turtle
 import main_meniu
 
 sc = turtle.Screen()
-sc.title("Ping Pong game")
+sc.title("Ping Pong Space invaders")
 sc.bgcolor("AliceBlue")
 sc.setup(width=1000, height=600)
 

@@ -3,7 +3,7 @@ import question
 
 def start_up(self):
     print("|==--                               --==|")
-    print("|==--  Welcome to Quiz game engine  --==|")
+    print("|==--  Welcome to Quiz Space invaders engine  --==|")
     print("|==--                               --==|")
     print("|==-- Let's start the quiz (YES/NO) --==|")
     print("|==--                               --==|")
