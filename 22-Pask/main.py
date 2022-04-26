@@ -9,6 +9,7 @@ def button_clear():
     check_state_3.set(0)
     check_state_4.set(0)
     check_state_5.set(0)
+    check_state_6.set(0)
     entry_1.delete(0, END)
     entry_2.delete(0, END)
 
@@ -32,7 +33,7 @@ def checkbox_used_6():
 
 root = Tk()
 root.title("Password generator")
-root.geometry("670x200")
+root.geometry("560x200")
 root.resizable(width=False, height=False)
 
 # Labels development
