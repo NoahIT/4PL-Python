@@ -1,14 +1,13 @@
-# READ ME:
-#
-# TypeError: generateKey() takes 0 positional arguments but 2 were given
-#
-# nesupratau kodel nesugebejo paimti is entries ivesto tekso del to negali
-# encondintis ir decodintis, sita sutvarkius turetu viskas graziai veikti
-# manau, tik nespejau dar restrictions ir requirements pabaigti (checkboxu).
-
 from tkinter import *
 
-def generateKey(): #p_string, key):
+study:
+
+https://www.jetbrains.com/help/pycharm/navigating-through-the-source-code.html
+https://www.google.com/search?q=how+to+go+deeper+inside+methods+to+see+algorithms+in+pycharm&ei=IVxxYv3FJqyOrwSO9J64CQ&ved=0ahUKEwi92sDg48P3AhUsx4sKHQ66B5cQ4dUDCA4&uact=5&oq=how+to+go+deeper+inside+methods+to+see+algorithms+in+pycharm&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BAghEApKBAhBGABKBAhGGABQjwhY1x5g0R9oAXABeACAAWeIAdkLkgEEMTcuMZgBAKABAcgBCMABAQ&sclient=gws-wiz
+
+
+
+def generateKey(p_string, key):
     p_string = entry_1.get()
     keyword = entry_2.get()
     key = generateKey(p_string, keyword)
@@ -57,24 +56,24 @@ def originalText(): #cipher_text, key):
     key = generateKey(p_string, keyword)
     cipher_text = cipherText(p_string, key)
 
-#Check box functions
-def checkbox_used():
-    print(check_state_1.get())
-
-def checkbox_used_2():
-    print(check_state_2.get())
-
-def checkbox_used_3():
-    print(check_state_1.get())
-
-def checkbox_used_4():
-    print(check_state_2.get())
-
-def checkbox_used_5():
-    print(check_state_1.get())
-
-def checkbox_used_6():
-    print(check_state_1.get())
+# #Check box functions
+# def checkbox_used():
+#     print(check_state_1.get())
+#
+# def checkbox_used_2():
+#     print(check_state_2.get())
+#
+# def checkbox_used_3():
+#     print(check_state_1.get())
+#
+# def checkbox_used_4():
+#     print(check_state_2.get())
+#
+# def checkbox_used_5():
+#     print(check_state_1.get())
+#
+# def checkbox_used_6():
+#     print(check_state_1.get())
 
 root = Tk()
 root.title("Password generator")
