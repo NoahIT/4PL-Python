@@ -1,0 +1,14 @@
+swithing tabs:
+
+current_tab = driver.current_window_handle
+
+all_tabs = driver.window_handles
+for tab in all_tabs:
+   if tab!= current_tab:
+       driver.switch_to.window(tab)
+
+driver.switch_to.window(all_tabs[i])
+
+all_tabs = driver.window_handles
+for tab in all_tabs:
+   driver.switch_to.window(tab)
