@@ -1,79 +1,55 @@
 from tkinter import *
 
-study:
+def button_encode(text, s):
+    entry_3.delete(0, END)
 
-https://www.jetbrains.com/help/pycharm/navigating-through-the-source-code.html
-https://www.google.com/search?q=how+to+go+deeper+inside+methods+to+see+algorithms+in+pycharm&ei=IVxxYv3FJqyOrwSO9J64CQ&ved=0ahUKEwi92sDg48P3AhUsx4sKHQ66B5cQ4dUDCA4&uact=5&oq=how+to+go+deeper+inside+methods+to+see+algorithms+in+pycharm&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6BAghEApKBAhBGABKBAhGGABQjwhY1x5g0R9oAXABeACAAWeIAdkLkgEEMTcuMZgBAKABAcgBCMABAQ&sclient=gws-wiz
+    result = ""
+    for i in range(len(text)):
+        char = text[i]
+        if (char.isupper()):
+            result += chr((ord(char) + s - 65) % 26 + 65)
+            entry_3.insert(0, result)
+        else:
+            result += chr((ord(char) + s - 97) % 26 + 97)
+            entry_3.insert(0, result)
+    return result
 
+def button_decode(text, dec):
+    entry_4.delete(0, END)
 
+    result = ""
+    for i in range(len(text)):
+        char = text[i]
+        if (char.isupper()):
+            result += chr((ord(char) + dec - 65) % 26 + 65)
+            res_i = int(len(entry_1.get()))
+            result[:res_i]
+            entry_4.insert(0, result)
+        else:
+            result += chr((ord(char) + dec - 97) % 26 + 97)
+            res_i = int(len(entry_1.get()))
+            result[:res_i]
+            entry_4.insert(0, result)
+    return result
 
-def generateKey(p_string, key):
-    p_string = entry_1.get()
-    keyword = entry_2.get()
-    key = generateKey(p_string, keyword)
-    cipher_text = cipherText(p_string, key)
+#Check box functions
+def checkbox_used():
+    print(check_state_1.get())
 
-    key = list(key)
-    if len(p_string) == len(key):
-        return(key)
-    else:
-        for i in range(len(p_string) -
-                       len(key)):
-            key.append(key[i % len(key)])
-    return("" . join(key))
+def checkbox_used_2():
+    print(check_state_2.get())
 
-def cipherText(): #p_string, key):
-    p_string = entry_1.get()
-    keyword = entry_2.get()
-    key = generateKey(p_string, keyword)
-    cipher_text = cipherText(p_string, key)
+def checkbox_used_3():
+    print(check_state_1.get())
 
-    cipher_text = []
-    for i in range(len(p_string)):
-        x = (ord(p_string[i]) +
-             ord(key[i])) % 26
-        x += ord('A')
-        cipher_text.append(chr(x))
-    return("" . join(cipher_text))
+def checkbox_used_4():
+    print(check_state_2.get())
 
+def checkbox_used_5():
+    print(check_state_1.get())
 
-def originalText(): #cipher_text, key):
-    p_string = entry_1.get()
-    keyword = entry_2.get()
-    key = generateKey(p_string, keyword)
-    cipher_text = cipherText(p_string, key)
-    orig_text = []
-    for i in range(len(cipher_text)):
-        x = (ord(cipher_text[i]) -
-             ord(key[i]) + 26) % 26
-        x += ord('A')
-        orig_text.append(chr(x))
-    return ("".join(orig_text))
-
-
-    p_string = entry_1.get()
-    keyword = entry_2.get()
-    key = generateKey(p_string, keyword)
-    cipher_text = cipherText(p_string, key)
-
-# #Check box functions
-# def checkbox_used():
-#     print(check_state_1.get())
-#
-# def checkbox_used_2():
-#     print(check_state_2.get())
-#
-# def checkbox_used_3():
-#     print(check_state_1.get())
-#
-# def checkbox_used_4():
-#     print(check_state_2.get())
-#
-# def checkbox_used_5():
-#     print(check_state_1.get())
-#
-# def checkbox_used_6():
-#     print(check_state_1.get())
+def checkbox_used_6():
+    print(check_state_1.get())
 
 root = Tk()
 root.title("Password generator")
@@ -98,9 +74,13 @@ entry_2 = Entry(width=26)
 entry_3 = Entry(width=26)
 entry_4 = Entry(width=26)
 
+# text = entry_1.get()
+# dec = entry_3.get()
+# s=26
+
 # Buttons development
-button_1 = Button(text="Encode", command=cipherText)
-button_3 = Button(text="Decode", command=originalText)
+button_1 = Button(text="Encode", command=lambda: button_encode(text=entry_1.get(),s=10))
+button_3 = Button(text="Decode", command=lambda: button_decode(text=entry_1.get(),dec=26))
 
 # Checkboxes development
 check_state_1 = IntVar()
