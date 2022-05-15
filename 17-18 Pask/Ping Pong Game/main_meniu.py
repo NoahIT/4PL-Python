@@ -12,7 +12,7 @@ def meniu_select():
     main_meniu_select.hideturtle()
 
     main_meniu_select.goto(0, 260)
-    main_meniu_select.write("Welcome to Ping Pong Space invaders", align="center", font=("Courier", 24, "bold"))
+    main_meniu_select.write("Welcome to Ping Pong 2. Space invaders (Exam_2)", align="center", font=("Courier", 24, "bold"))
 
     main_meniu_select.goto(0, 130)
     main_meniu_select.write("Please select your difficulty:", align="center", font=("Courier", 20, "bold"))
@@ -43,7 +43,7 @@ def wrong_input():
     wrong_input.hideturtle()
 
     wrong_input.goto(0, 260)
-    wrong_input.write("Welcome to Ping Pong Space invaders", align="center", font=("Courier", 24, "bold"))
+    wrong_input.write("Welcome to Ping Pong 2. Space invaders (Exam_2)", align="center", font=("Courier", 24, "bold"))
 
     wrong_input.goto(0, 200)
     wrong_input.write("WRONG INPUT !", align="center", font=("Courier", 24, "bold"))

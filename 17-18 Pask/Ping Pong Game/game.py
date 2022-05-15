@@ -2,7 +2,7 @@ import turtle
 import gv
 
 sc = turtle.Screen()
-sc.title("Ping Pong Space invaders")
+sc.title("Ping Pong 2. Space invaders (Exam_2)")
 sc.bgcolor("AliceBlue")
 sc.setup(width=1000, height=600)
 

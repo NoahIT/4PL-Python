@@ -24,7 +24,7 @@ quotes = [
     "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle",
     "Being strong means rejoicing in who you are, complete with imperfections.",
     "If you don’t go after what you want, you’ll never have it. If you don’t ask, the answer is always no. If you don’t step forward, you’re always in the same place.",
-    "I've missed more than 9,000 shots in my career. I've lost almost 300 games. Twenty-six times I've been trusted to take the Space invaders-winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.",
+    "I've missed more than 9,000 shots in my career. I've lost almost 300 games. Twenty-six times I've been trusted to take the 2. Space invaders (Exam_2)-winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.",
     "The only place you find success before work is in the dictionary.",
     "You're going to fail your way to success, you have nothing to be ashamed of so keep your head up. It’s much easier to come up with excuses of why you can't do it. If you do what is easy your life will be hard.",
     "A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.",
