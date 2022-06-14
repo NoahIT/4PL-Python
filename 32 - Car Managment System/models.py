@@ -1,10 +1,11 @@
 from database import Base
 from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import sessionmaker
 
 class User(Base):
     __tablename__ = "User"
 
-    id = Column(Integer, primary_key=True, nullable=False)
+    #id = Column(Integer, primary_key=True, nullable=False)
     public_key = Column(String(20), index=True, nullable=False, unique=True)
     first_name = Column(String)
     last_name = Column(String)
@@ -14,7 +15,7 @@ class User(Base):
 class Car(Base):
     __tablename__ = "Car"
 
-    id = Column(Integer, primary_key=True, nullable=False)
+    #id = Column(Integer, primary_key=True, nullable=False)
     public_key = Column(String(20), index=True, nullable=False, unique=True)
     brand = Column(String)
     model = Column(String)
