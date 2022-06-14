@@ -20,7 +20,7 @@
 11) paleidziam uvicorn'a              | uvicorn main:app --reload
 12) Jungiames i localhost
 
-[2] Links:
+[2] Usefull links:
 
 https://www.codecademy.com/article/what-is-crud#heading
 https://note.nkmk.me/en/python-pip-install-requirements/
@@ -32,7 +32,7 @@ https://fastapi.tiangolo.com/ >> Tutorial - User Guide >> Tutorial - User Guide 
 [3] Windows PowerShell kai negali aktyvuoti venv:
 
 > Set-ExecutionPolicy RemoteSigned
-ir po to (Yes to all):
+ir po to - (Yes to all [A]):
 > A
 
 [4] BY DEFAULT- localhost:8000/docs
