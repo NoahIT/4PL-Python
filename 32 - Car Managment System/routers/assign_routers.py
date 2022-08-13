@@ -11,7 +11,7 @@ from repository import assign_repository
 # noinspection PyUnresolvedReferences
 import models
 # noinspection PyUnresolvedReferences
-from schemas import assign_schemas
+from schemas import assign_schemas, user_schemas, car_schemas
 
 
 router = APIRouter(prefix='/api/assigned',tags=["Assigned_Users"])
@@ -75,12 +75,11 @@ def delete(id: int, db: Session = Depends(get_db)):
 @router.post('')
 def create(request: assign_schemas.AssignPostSchema, db: Session = Depends(get_db)):
     new_assign = models.Assign(
-        # id=request.id,
-        # public_key=request.public_key,
-        # first_name=request.first_name,
-        # last_name=request.last_name,
-        # email=request.email,
-        # password=request.password kitokie parametrai
+        first_name=user_schemas.UserPostSchema.first_name,
+        last_name=user_schemas.UserPostSchema.last_name,
+        email=user_schemas.UserPostSchema.email,
+        brand=car_schemas.CarPostSchema.Brand,
+        model=car_schemas.CarPostSchema.Model
     )
 
     db.add(new_assign)
